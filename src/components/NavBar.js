@@ -22,8 +22,7 @@ function NavBar() {
     return(
         <NavBarContainer>
             <StyledLink to="/">Home</StyledLink>
-            <StyledLink to="/sobre">Sobre</StyledLink>
-            <StyledLink to="/contato">Contato</StyledLink>
+            <StyledLink to="../../sobre.html">Sobre</StyledLink>
         </NavBarContainer>
     )
 }

@@ -34,7 +34,7 @@ header{
 
 
 .container{
-    max-width: 1600px;
+    max-width: 1700px;
     margin: 0 auto;
     display: grid;
     grid-template-areas: 
@@ -45,10 +45,15 @@ header{
     'vantagens vantagens vantagens vantagens vantagens';
     gap: 10px;
 
+    .title {
+        font-weight: bold;
+        font-size: 20px;
+        
+    }
     #img-apresentacao{
         background-image: url("../assets/img-apresentacao.jpeg");
         background-size: cover;
-        height: 500px;
+        height: 600px;
         grid-area: apresentacao;
     }
 
@@ -58,13 +63,11 @@ header{
     }
 
     #objetivo{
-        // width: 500px;
         padding: 0px 0px 0px 15px;
         grid-area: objetivo;
     }
 
     #funcionalidade{
-        // width: 500px;
         padding: 0px 0px 0px 15px;
         grid-area: funcionalidade;
     }
@@ -72,7 +75,6 @@ header{
     #title{
         display: flex;
         font-weight: bolder;
-        // width: 100px;
         justify-content: center;
         align-items: center;
         font-size: 20px;
@@ -81,7 +83,6 @@ header{
 
     #descricao{
         display: flex;
-        // width: 700px;
         padding: 0px 30px;
         justify-content: center;
         align-items: center;
@@ -92,11 +93,61 @@ header{
         display: flex;
         justify-content: center;
         grid-area: informacoes;
+        
+        a {
+            padding: 10px 20px;
+            border: 1px solid white;
+            text-decoration: none;
+            color: #000;
+        }
     }
 
     #vantagens{
         grid-area: vantagens;
+        span { 
+            font-size: 26px;
+            font-weight: bold;
+        }
+        
     }
 
+    .vantagens-interno {
+        display: grid;
+        grid-template-areas: 'tempo eficiencia conforto';
+        gap: 10px;
+
+        img {
+            width: 300px;
+            height: 350px;
+            border-radius: 20px;
+        }
+
+        p.title {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .vantagem1 {
+            grid-area: tempo;
+            display: flex;
+            align-items: center;
+        }
+        
+        .vantagem2 {
+            grid-area: eficiencia;
+            display: flex;
+            align-items: center;
+        }
+
+        .vantagem3 {
+            grid-area: conforto;
+            display: flex;
+            align-items: center;
+        }
+        
+        .texto {
+            margin-left: 10px;
+        }
+    }
     
 }

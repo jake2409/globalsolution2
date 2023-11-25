@@ -11,17 +11,17 @@ function Home() {
         setLoggedInUser(username);
       };
     
-    const handleLogout = () => {
-        // Remove o nome do usuário da sessionStorage
-        sessionStorage.removeItem('loggedInUser');
-        setLoggedInUser(null);
-    }
+    // const handleLogout = () => {
+    //     // Remove o nome do usuário da sessionStorage
+    //     sessionStorage.removeItem('loggedInUser');
+    //     setLoggedInUser(null);
+    // }
     return(
         <div> 
 
         <Header/>
         {loggedInUser ? (
-            window.location.href = '../../sobre.html'
+            window.location.href = 'localhost/sobre.html'
             ) : (
             <LoginForm onLogin={handleLogin} />
             )

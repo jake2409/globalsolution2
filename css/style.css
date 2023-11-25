@@ -27,15 +27,18 @@ header {
       text-decoration: underline; }
 
 .container {
-  max-width: 1600px;
+  max-width: 1700px;
   margin: 0 auto;
   display: grid;
   grid-template-areas: 'apresentacao apresentacao apresentacao apresentacao solucao' 'apresentacao apresentacao apresentacao apresentacao funcionalidade' 'title descricao descricao descricao objetivo' 'informacoes informacoes informacoes informacoes informacoes' 'vantagens vantagens vantagens vantagens vantagens';
   gap: 10px; }
+  .container .title {
+    font-weight: bold;
+    font-size: 20px; }
   .container #img-apresentacao {
     background-image: url("../assets/img-apresentacao.jpeg");
     background-size: cover;
-    height: 500px;
+    height: 600px;
     grid-area: apresentacao; }
   .container #solucao {
     padding: 0px 0px 0px 15px;
@@ -63,5 +66,38 @@ header {
     display: flex;
     justify-content: center;
     grid-area: informacoes; }
+    .container #informacoes a {
+      padding: 10px 20px;
+      border: 1px solid white;
+      text-decoration: none;
+      color: #000; }
   .container #vantagens {
     grid-area: vantagens; }
+    .container #vantagens span {
+      font-size: 26px;
+      font-weight: bold; }
+  .container .vantagens-interno {
+    display: grid;
+    grid-template-areas: 'tempo eficiencia conforto';
+    gap: 10px; }
+    .container .vantagens-interno img {
+      width: 300px;
+      height: 350px;
+      border-radius: 20px; }
+    .container .vantagens-interno p.title {
+      font-weight: bold;
+      font-size: 18px; }
+    .container .vantagens-interno .vantagem1 {
+      grid-area: tempo;
+      display: flex;
+      align-items: center; }
+    .container .vantagens-interno .vantagem2 {
+      grid-area: eficiencia;
+      display: flex;
+      align-items: center; }
+    .container .vantagens-interno .vantagem3 {
+      grid-area: conforto;
+      display: flex;
+      align-items: center; }
+    .container .vantagens-interno .texto {
+      margin-left: 10px; }
